@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <title>Admin panel</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="topbar">
+      <div class="logo">
+        <h2 id="logo">Logo.</h2>
+      </div>
+      <div class="search">
+        <input type="text" id="search" placeholder="search here">
+        <label for="search"> <i class="fas fa-search"></i></label>
+      </div>
+      <i class="fas fa-bell"></i>
+      <div class="user">
+        <img class="avatar" src="/images/user.png" alt="">
+      </div>
+    </div>
+    <div class="sidebar">
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fas fa-home"></i>
+            <div>Home</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-folder"></i>
+            <div>Docs</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-money-check"></i>
+            <div>Transactions</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-shopping-cart"></i>
+            <div>Cart</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-chart-bar"></i>
+            <div>Analytics</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-tasks"></i>
+            <div>Checklist</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-calendar"></i>
+            <div>Calendar</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-sliders-h"></i>
+            <div>Settings</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="main">
+      <div class="cards">
+
+        <div class="card">
+          <div class="card-content">
+            <div class="number">$47M</div>
+            <div class="card-name1">Income</div>
+          </div>
+          <div class="icon-box">
+            <i class="fas fa-dollar-sign"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <div class="number">98K</div>
+            <div class="card-name2">Orders</div>
+          </div>
+          <div class="icon-box">
+            <i class="fas fa-sitemap"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <div class="number">347K</div>
+            <div class="card-name3">Activity</div>
+          </div>
+          <div class="icon-box">
+            <i class="fas fa-chart-line"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <div class="number">$23M</div>
+            <div class="card-name4">Revenue</div>
+          </div>
+          <div class="icon-box">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="charts">
+        <div class="chart">
+          <h2>Total Revenue (last 6 months)</h2>
+          <div>
+            <canvas id="lineChart"></canvas>
+          </div>
+        </div>
+        <div class="chart" id="doughnut-chart">
+          <h2>Sales by Country
+          </h2>
+
+          <canvas id="pie"></canvas>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Project -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+  <script src="/line-chart.js"></script>
+  <script src="/pie-chart.js"></script>
+  <script src="/app.js"></script>
+ 
+</body>
+
+</html>
