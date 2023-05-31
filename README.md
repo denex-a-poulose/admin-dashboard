@@ -104,4 +104,4 @@ images - [Get Illustrations](https://www.getillustrations.com/
 
 ## License
 
-[MIT](https://github.com/denex-a-poulose/admin-dashboard/blob/main/README.md)
+[MIT](https://github.com/denex-a-poulose/admin-dashboard/blob/main/LICENSE.md)
